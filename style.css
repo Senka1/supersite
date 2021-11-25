@@ -1,0 +1,232 @@
+body {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.wrapper__gradient {
+    background: linear-gradient(0deg, rgba(9,9,121,1) 0%, rgba(101,93,250,1) 50%, rgba(119,0,255,1) 100%);
+}
+
+.container {
+    max-width: 1230px;
+    padding: 0 15px;    
+    margin: 0 auto;
+}
+
+.header {
+    text-align: center;
+    background: #007aff;
+    font-family: 'Oswald', sans-serif;
+    border: rgba(33, 4, 136, 0.479) solid 2px;
+}
+
+.footer {
+    text-align: center;
+    background: #007aff;
+    font-family: 'Oswald', sans-serif;
+    border: rgba(33, 4, 136, 0.479) solid 2px;
+}
+
+.inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    padding: 25px;
+}
+
+li {
+    display: inline-block;
+}
+
+a {
+    color:#fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 20px;
+    transition: .4s;
+}
+
+.link--sm {
+    font-size: 12px;
+}
+
+ul a:hover {
+    color: #465cdb;
+}
+
+.logo {
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+.logo--lg {
+    font-size: 30px;
+}
+
+.swiper {
+    flex-grow: 1;
+    background: linear-gradient(rgba(9,9,121,1) 0%, rgba(101,93,250,1) 50%, rgba(119,0,255,1) 100%);
+    text-align: center;
+    min-width: 100%;
+}
+
+.swiper-slide {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 80px;
+}
+
+.swiper-pagination-bullet {
+    margin: 20px !important;
+    height: 20px;
+    width: 20px;
+}
+
+.content__inner {
+    display: flex;
+    align-items: center;
+}
+
+.image {
+    padding: 50px;
+    margin: 50px;
+    width: 50%;
+}
+
+.p1,
+.p2 {
+    text-shadow: 0 0 10px black;
+    font-size: 18px;
+    line-height: 2;
+}
+
+.p2 {
+    text-align: right;
+}
+
+.image1 {
+    margin-right: 20px;
+}
+
+.image2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 200px;
+    max-width: 200px;
+    height: 200px;
+    margin: 0 0 50px 50px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.wrapper2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #465cdb72;
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.wrapper2::after {
+    content: '';
+    display: block;
+    width: 500px;
+    height: 394px;
+    position: absolute;
+    animation: anime 5s infinite;
+    z-index: -1;
+    bottom: -10px;
+    background-image: url('https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fi2.kym-cdn.com%2Fphotos%2Fimages%2Foriginal%2F001%2F167%2F513%2Fa74.gif&f=1&nofb=1')
+}
+
+@keyframes anime {
+    0% {
+        left: 10px;
+        transform: scale(1);
+    }
+
+    25% {
+        left: 50%;
+        transform: translateX(-50%);
+        transform: scale(1.5);
+    }
+
+    50% {
+        left: 125%;
+        transform: scale(2);
+    }
+
+    75% {
+        left: 50%;
+        transform: translateX(-50%);
+        transform: scale(1.5);
+    }
+
+    100% {
+        left: 10px;
+        transform: scale(1);
+    }
+}
+
+.image2 img {
+    transform: scale(.45);
+}
+
+.login {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;   
+}
+form {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    color: #000;
+}
+input{
+    margin: 10px;
+    padding: 10px;
+    border: 2px solid rgb(8, 136, 182);
+    border-bottom: 6px solid rgb(4, 97, 131);
+}
+button{
+    padding: 10px;
+    background-color: #6478e9;
+    border: unset;
+    cursor: pointer;
+    box-shadow: 10px 10px 0 rgb(153, 6, 6),
+                -10px -10px 0 rgb(3, 140, 3),
+                10px -10px 0 #00f,
+                -10px 10px 0 rgb(206, 216, 19);
+    position: relative;
+    color: #fff;
+    width: 200px;
+    margin: 25px auto;
+    transition: 1s;
+}
+button:hover {
+    box-shadow: 0 0 20px #000;
+    text-shadow: 0 0 20px #fff;
+    background-color: #000;
+    outline: none;
+}
+.a1{
+    color: #000;
+    font-size: 18px;
+    font-weight: 700;
+}
