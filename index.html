@@ -9,9 +9,11 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald&family=Comfortaa&display=swap">
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
     <link rel="stylesheet" href="./style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="scroll.js"></script>
     <!-- / Imports -->
 
-    <title>Frames | Принцип работы</title>
+    <title>Frames</title>
 </head>
 <body>
     <div class="wrapper">
@@ -20,18 +22,12 @@
             <div class="container">
                 <div class="inner">
                     <a href="/" class="logo">Frames</a>
-
-                    <form action="login.php" method="post">
-                        <input type="submit" value="Login">
-                    </form>
+                    <a href="login.html" class="login1" type="submit">Login</a>
 
                     <ul>
-                        <li><a href="#">Определение</a></li>
-                        <li><a href="#">Гиперссылки</a></li>
-                        <li><a href="#">Формы</a></li>
-                        <li><a href="#">Текстовые области</a></li>
-                        <li><a href="#">Списки</a></li>
-                        <li><a href="#">Отправка данных</a></li>
+                        <li><a href="#opr">Определение</a></li>
+                        <li><a href="#code">Пример</a></li>
+                        <li><a href="#use">Применение</a></li>
                     </ul>
                 </div>
             </div>
@@ -65,12 +61,26 @@
         <section class="content">
             <div class="container">
                 <div class="content__inner">
-                       <img class="image1" src="https://data.whicdn.com/images/48814149/original.gif" style="border-radius: 20%;">
-                       <p class="p1">Элемент <frame> (от англ. frame — рамка, каркас) определяет свойства отдельного фрейма, на которые делится окно браузера. Этот элемент должен располагаться в контейнере <frameset>, который к тому же задаёт способ разметки страницы на отдельные области. В каждую из таких областей загружается самостоятельная веб-страница определяемая с помощью атрибута src. Хотя обязательных атрибутов у <frame> и нет, рекомендуется задавать каждому фрейму его имя через атрибут name. Это особенно важно, если требуется по ссылке из одного фрейма загружать документ в другой.</p>
+                       <img class="image1" src="https://data.whicdn.com/images/48814149/original.gif" id="opr" style="border-radius: 20%;">
+                       <p class="p1" >Элемент <frame> (от англ. frame — рамка, каркас) определяет свойства отдельного фрейма, на которые делится окно браузера. Этот элемент должен располагаться в контейнере <frameset>, который к тому же задаёт способ разметки страницы на отдельные области. В каждую из таких областей загружается самостоятельная веб-страница определяемая с помощью атрибута src. Хотя обязательных атрибутов у <frame> и нет, рекомендуется задавать каждому фрейму его имя через атрибут name. Это особенно важно, если требуется по ссылке из одного фрейма загружать документ в другой.</p>
+                </div>
+<h3 style="padding-top:140px;text-align: center" id="code">Пример базовой страницы с использованием технологии frame</h3>
+                <div class="content__inner">
+
+                    <p class="p1">
+                        < html ><br>< head ><br>
+                        < title > Фреймы < / title ><br>
+ < /head >
+ < frameset cols="100,*" ><br>
+  < frame src="menu.html" name="MENU" > <br>
+  < frame src="content.html" name="CONTENT" ><br>
+ < /frameset ><br>
+< /html >
+                    </p>
                 </div>
 
                 <div class="content__inner">
-                    <p class="p2">Элемент frame использовался, чтобы разбить окно браузера на несколько независимых частей. На данный момент фреймы устарели и не должны использоваться.</p>
+                    <p class="p2" id="use">Элемент frame использовался, чтобы разбить окно браузера на несколько независимых частей. На данный момент фреймы устарели и не должны использоваться.</p>
                     <div class="image2">
                         <img src="https://im0-tub-ru.yandex.net/i?id=502befdb5f7af5a435f35d858d2d84d1-l&ref=rim&n=13&w=640&h=640">
                     </div>
@@ -80,24 +90,16 @@
             </div>
         </section>
     </div>
-    <!--Frame-->
-    
-    <!--/Frame-->
     
     <!-- Footer -->
     <footer class="footer">
-        <div class="container">
-            <div>
-                <ul>
-                    <li><a href="#">Определение</a></li>
-                    <li><a href="#">Гиперссылки</a></li>
-                    <li><a href="#">Формы</a></li>
-                    <li><a href="#">Текстовые области</a></li>
-                    <li><a href="#">Списки</a></li>
-                    <li><a href="#">Отправка данных</a></li>
+        <div class="container1">
+                <ul class="ulf">
+                    <p class="contact">связаться с нами</p>
+                    <li><a href="#" class="alf">контакт.номер - 8911728830</a></li>
+                    <li><a href="#" class="alf">электронная почта - website@sites.com</a></li>
+                    <li><a href="#" class="alf">vk - vk.com/website</a></li>
                 </ul>
-                <a href="/" class="logo">Frames</a>
-            </div>
         </div>
     </footer>
     <!-- / Footer -->

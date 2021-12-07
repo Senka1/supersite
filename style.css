@@ -17,7 +17,7 @@ body {
 
 .container {
     max-width: 1230px;
-    padding: 0 15px;    
+    padding: 0 15px;
     margin: 0 auto;
 }
 
@@ -50,8 +50,8 @@ li {
 a {
     color:#fff;
     text-decoration: none;
-    margin: 0 15px;
-    font-size: 20px;
+    margin: 0 55px;
+    font-size: 27px;
     transition: .4s;
 }
 
@@ -66,6 +66,7 @@ ul a:hover {
 .logo {
     font-size: 40px;
     text-transform: uppercase;
+    pointer-events: none;
 }
 
 .logo--lg {
@@ -97,6 +98,7 @@ ul a:hover {
 .content__inner {
     display: flex;
     align-items: center;
+    padding: 80px;
 }
 
 .image {
@@ -189,7 +191,7 @@ ul a:hover {
 
 .login {
     padding: 0;
-    margin: 0;
+    margin-right: 100px;
     box-sizing: border-box;   
 }
 form {
@@ -230,3 +232,54 @@ button:hover {
     font-size: 18px;
     font-weight: 700;
 }
+
+.contact{
+    font-size: 50px;
+    margin-top: 7px;
+    margin-bottom: 40px;
+    padding-top: 0;
+    color: #cdcdcd
+}
+
+a.alf, a.alf:hover{
+    text-decoration: none;
+    color:white;
+    pointer-events: none;
+    margin-right: 65px;
+    margin-left: 20px;
+
+}
+
+.login1{
+    border: 5px solid black;
+    padding: 5px;
+    width: 80px;
+    border-radius: 20px;
+    box-shadow: 0 0 7px 3px black;
+}
+.login{
+    border: 7px solid rgba(53, 78, 222, 0.45);
+    padding: 50px 100px;
+    margin: 100px ;
+    width: 700px;
+    border-radius: 20px;
+    box-shadow: 0 0 7px 3px rgba(53, 78, 222, 0.45);
+}
+
+.button2{
+    padding: 10px;
+    background-color: #6478e9;
+    border: unset;
+    cursor: pointer;
+    box-shadow: 10px 10px 0 rgb(153, 6, 6),
+                -10px -10px 0 rgb(3, 140, 3),
+                10px -10px 0 #00f,
+                -10px 10px 0 rgb(206, 216, 19);
+    position: relative;
+    color: #fff;
+    width: 360px;
+    margin: 25px auto;
+    transition: 1s;
+}
+
+
