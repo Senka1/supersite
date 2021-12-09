@@ -1,0 +1,117 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN" "http://www.w3.org/TR/html4/frameset.dtd">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Imports -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald&family=Comfortaa&display=swap">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <!-- / Imports -->
+
+    <title>Frames 2</title>
+	<style type="text/css">
+   #footer {
+    position: relative;
+    color: #fff; 
+    width: 50%;
+	height: 50%;
+   }
+   #footer2{
+   position-relative;
+   width:50%;
+   height:50%
+   left: 20%;}
+   p{font-size:25px;}
+  </style>
+  <script language="JavaScript" type="text/javascript">
+<!--
+function linklist(what){
+var selectedopt=what.options[what.selectedIndex]
+if (document.getElementById && selectedopt.getAttribute("target")=="new")
+window.open(selectedopt.value)
+else
+window.location=selectedopt.value
+}
+-->
+</script>
+</head>
+<body>
+
+    <div class="wrapper__gradient">
+        <section class="content">
+            <div class="container">
+			<div>
+					<form name="menu">
+<select name="sel" onChange="linklist(document.menu.sel)">
+<option value="#">Выберите язык</option>
+<option title="English" value="index2.html">Russian</option>
+<option title="English" value="index3.html">English</option>
+</select>
+</form>
+					</div><br>
+                <div class="content__inner">
+					
+                       <p class="p1">Frames based on the Frame and Frameset tags - their structure
+                        So, the creation of a classic frame structure begins with the fact that you write in the Html code instead of the opening and closing Body tags, which usually should be present in any document, replacing its container based on Frameset elements.
+                        
+                        The fundamental point is that the Body element in this case cannot be used - either Body (for a regular document) or Frameset (when creating a document's frame structure):
+                        
+                        Regular frame code on Frame and Frameset tags
+                        Each frame that we form inside the main one is created using a separate Frame element. This tag is single and in it we set the path to the document that should be loaded into this window.
+                        
+                        The third element that we haven't touched on yet is Noframes. It is paired and allows you to write some text inside itself, which will be processed by the browser and displayed on the web page only if this very browser (or other display device) does not support frames. This can happen, for example, when using a browser for mobile devices.
+                        
+                        Usually, in Noframes they add not only information about the current situation with the impossibility of processing the frame structure, but also add the ability to go to other pages, where it will be possible to continue working without using them. It is difficult to say anything more about him, so we will continue.
+                        
+                        It turns out that the Frameset element, used instead of the Body tag, takes up all the space allocated for the viewport, and frames will be created within this area using separate Frame elements. In this regard, the question arises - how to divide the viewing area between separate windows, or, in other words, how to set the size of each of them.
+                        
+                        This is done by adding the appropriate attributes to the Frameset element. There are two of them - Cols and Rows. Cols sets the division of a large window into vertical frames or columns, and Rows allows you to divide it into horizontal windows or rows.
+                        HTML frames are used to split the browser window into multiple sections, each of which can load a separate HTML document. A set of frames in a browser window is called a frameset. The window is divided into frames in the same way as tables are organized: into rows and columns.
+
+                        Disadvantages of frames
+                        There are several disadvantages to using frames, so it is never recommended to use frames in your web pages -
+                        
+                        Some smaller devices often fail to keep up with frames because their screen is not large enough to split.
+                        
+                        Sometimes your page will display differently on different computers due to different screen resolutions.
+                        
+                        The back button in the browser may not work as expected.
+                        
+                        There are a few other browsers that do not support frame technology.
+                        
+                        Creating frames
+                        To use frames on the page, we use the <frameset> tag instead of the <body> tag. The <frameset> tag defines how to split the window into frames. The rows attribute of the <frameset> tag defines horizontal frames, and the cols attribute defines vertical frames. Each frame is identified with a <frame> tag and determines which HTML document should open in the frame. </p><br>
+						
+					</div>
+				<div>
+					<div id="footer">
+						<form action="index2.html">
+							<p><b>Была ли вам интересна эта тема?</b></p>
+							<p><input name="interesting" type="radio" value="interesting" checked> инетересно</p>
+							<p><input name="interesting" type="radio" value="notinteresting"> не интересно</p>
+							<p><input type="submit" value="Выбрать"></p>
+						</form> 
+					</div>
+					<div id="footer2">
+						 <form action="index2.html ">
+							<p>Что бы вы хотели добавить на эту страницу?</p>
+							<p><input type="checkbox" name="a" value="text">текста </p>
+							<p><input type="checkbox" name="a" value="img"> картинок</p>
+							<p><input type="checkbox" name="a" value="src"> гиперссылок</p>
+							<p><input type="submit" value="Отправить"></p>
+						</form>
+					</div>
+				</div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="./script.js"></script>
+    <!-- / Scripts -->
+</body>
+</html>

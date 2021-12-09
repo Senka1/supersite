@@ -11,14 +11,49 @@
     <link rel="stylesheet" href="./style.css">
     <!-- / Imports -->
 
-    <title>Frames | Принцип работы</title>
+    <title>Frames 2</title>
+	<style type="text/css">
+   #footer {
+    position: relative;
+    color: #fff; 
+    width: 50%;
+	height: 50%;
+   }
+   #footer2{
+   position-relative;
+   width:50%;
+   height:50%
+   left: 20%;}
+   p{font-size:25px;}
+  </style>
+  <script language="JavaScript" type="text/javascript">
+<!--
+function linklist(what){
+var selectedopt=what.options[what.selectedIndex]
+if (document.getElementById && selectedopt.getAttribute("target")=="new")
+window.open(selectedopt.value)
+else
+window.location=selectedopt.value
+}
+-->
+</script>
 </head>
 <body>
 
     <div class="wrapper__gradient">
         <section class="content">
             <div class="container">
+			<div>
+					<form name="menu">
+<select name="sel" onChange="linklist(document.menu.sel)">
+<option value="#">Выберите язык</option>
+<option title="English" value="index2.html">Russian</option>
+<option title="English" value="index3.html">English</option>
+</select>
+</form>
+					</div><br>
                 <div class="content__inner">
+					
                        <p class="p1">Фреймы на основе тегов Frame и Frameset — их структура
                         Итак, создание классической фреймовой структуры начинается с того, что вы прописываете в Html коде вместо открывающего и закрывающего тега Body, который обычно должен присутствовать в любом документе, заменяющий его контейнер на основе элементов Frameset.
                         
@@ -49,7 +84,28 @@
                         
                         Создание рамок
                         Чтобы использовать фреймы на странице, мы используем тег <frameset> вместо тега <body>. Тег <frameset> определяет, как разделить окно на фреймы. Атрибут rows тега <frameset> определяет горизонтальные рамки, а атрибут cols определяет вертикальные рамки. Каждый фрейм обозначается тегом <frame> и определяет, какой HTML-документ должен открываться во фрейме.</p>
-                </div>
+						<br>
+						
+					</div>
+				<div>
+					<div id="footer">
+						<form action="index2.html">
+							<p><b>Была ли вам интересна эта тема?</b></p>
+							<p><input name="interesting" type="radio" value="interesting" checked> инетересно</p>
+							<p><input name="interesting" type="radio" value="notinteresting"> не интересно</p>
+							<p><input type="submit" value="Выбрать"></p>
+						</form> 
+					</div>
+					<div id="footer2">
+						 <form action="index2.html ">
+							<p>Что бы вы хотели добавить на эту страницу?</p>
+							<p><input type="checkbox" name="a" value="text">текста </p>
+							<p><input type="checkbox" name="a" value="img"> картинок</p>
+							<p><input type="checkbox" name="a" value="src"> гиперссылок</p>
+							<p><input type="submit" value="Отправить"></p>
+						</form>
+					</div>
+				</div>
             </div>
         </section>
     </div>
